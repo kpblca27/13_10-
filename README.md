@@ -21,6 +21,22 @@ console.log(sort123(nums));
 console.log(sort321(nums));
 
 //3
+const appointment = {
+   Name: "Шишкин Ш",
+   doctorName: "Шуев У",
+   date: "06.07.2027",
+   time: "12am",
+   cabinetik: "02_67"
+};
+function buildMessage(appointment) {
+return (`Имя: ${appointment.Name}
+Имя врача: ${appointment.doctorName}
+Дата приема: ${appointment.date}
+Время приема: ${appointment.time}
+Кабинет: ${appointment.cabinetik}`)
+}
+console.log(buildMessage(appointment));
+
 //4
  async function hashStr(str) {
     var buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
@@ -35,4 +51,11 @@ hashStr("aBrakadabra").then(function(res) {
 
         }
         console.log(uuid(true));
-//6
+//9
+function rev(str) {
+    let res = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        res = res + str[i];
+    }
+    return res;
+}
