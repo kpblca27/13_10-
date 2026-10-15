@@ -66,8 +66,6 @@ function rev(str) {
 function isPal(str) {
     let clean = str.toLowerCase().replace(/[^а-яёa-z0-9]/g, '');
     let reversed = clean.split('').reverse().join('');
-    
-    // 3. Сравниваем чистую строку с перевернутой
     return clean === reversed;
 }
 console.log(isPal("А роза упала на лапу Азора"));
