@@ -45,12 +45,14 @@ console.log(buildMessage(appointment));
 
 hashStr("aBrakadabra").then(function(res) {
     console.log("", res); });
-    //5
+    
+//5
      function uuid(isAuthourized){
            return  (isAuthourized&&crypto.randomUUID) ? crypto.randomUUID() : null;
-
         }
         console.log(uuid(true));
+
+//
 //9
 function rev(str) {
     let res = '';
